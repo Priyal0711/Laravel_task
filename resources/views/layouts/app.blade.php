@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Curd Opration</title>
+  <title>Crud Operation</title>
 </head>
 
 <body>

@@ -66,7 +66,7 @@ Route::put('/tasks/{id}', function ($id, Request $request) {
     $task->save();
 
     return redirect()->route('tasks.show', ['id' => $task->id])
-        ->with('success', 'Task updated successfully!');
+        ->with('success', 'Task updated successfullyyy!');
 })->name('tasks.update');
 
 Route::delete('/tasks/{task}', function (Task $task) {
