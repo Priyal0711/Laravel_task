@@ -1,6 +1,4 @@
-<h1>
-  The list of tasks
-</h1>
+
 @extends('layouts.app')
 
 @section('title', 'The list of tasks')
@@ -19,4 +17,9 @@
     <div>There are no tasks!</div>
   @endforelse
   {{-- @endif --}}
+  @if ($tasks->count())
+    <nav>
+      {{ $tasks->links() }}
+    </nav>
+  @endif
 @endsection

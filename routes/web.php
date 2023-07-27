@@ -19,7 +19,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/tasks', function () {
     return view('index', [
-        'tasks' => Task::latest()->get()
+        // 'tasks' => Task::latest()->get()
+        'tasks' => Task::latest()->paginate(5)
     ]);
 })->name('tasks.index');
 
